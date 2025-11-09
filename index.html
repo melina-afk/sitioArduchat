@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <title>Expo Técnica 2025 – Proyecto de Web Dinámica y Plataformas Móviles</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="/img/logo.png" alt="logo de la escuela">
+        </div>
+        <div class="menu-toggle">&#9776;</div>
+        <div class="titulos">
+            <h1>Expo Técnica 2025 Proyecto de Web Dinámica y Plataformas Móviles</h1>
+            <h3>Desarrollo, Innovación y Tecnología en la Escuela Técnica</h3>
+        </div>
+        <div class="menu">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="#tecnologias">Tecnologías Utilizadas</a></li>
+                    <li><a href="#info">Información sobre las tecnologías</a></li>
+                    <li><a href="#proyecto">Nuestro Proyecto</a></li>
+                    <li><a href="#funcionamiento">Funcionamiento</a></li>
+                    <li><a href="#proceso">Proceso</a></li>
+
+                    
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="seccion1">
+        <div class="textoBienvenida">
+            <p>Bienvenidos a la Expo Técnica 2025. En esta muestra, los alumnos de 7º año del Taller de Proyecto de Web Dinámica y Proyecto para Plataformas Móviles presentan sus desarrollos integradores que combinan programación, diseño y control electrónico. A lo largo del año, aprendieron a crear soluciones tecnológicas completas, desde la interfaz web hasta la conexión con microcontroladores.</p>
+        </div>
+    </div>
+
+    <!-- Sección 3: Tecnologías utilizadas -->
+    <div id="tecnologias" class="seccion2">
+        <h2>Herramientas aprendidas y utilizadas</h2>
+        <p class="subtitulo">Tecnologías aplicadas durante el desarrollo de los proyectos.</p>
+        
+        <div class="grilla-tecnologias">
+            <div class="tarjeta">
+                <i class="fa-brands fa-html5"></i>
+                <h3>HTML5</h3>
+                <p>Estructura del contenido web.</p>
+            </div>
+            <div class="tarjeta">
+                <i class="fa-brands fa-css3-alt"></i>
+                <h3>CSS3</h3>
+                <p>Estilos y diseño visual.</p>
+            </div>
+            <div class="tarjeta">
+                <i class="fa-brands fa-js"></i>
+                <h3>JavaScript</h3>
+                <p>Interactividad y dinámica en el navegador.</p>
+            </div>
+            <div class="tarjeta">
+                <i class="fa-brands fa-php"></i>
+                <h3>PHP</h3>
+                <p>Programación del lado del servidor.</p>
+            </div>
+            <div class="tarjeta">
+                <i class="fa-solid fa-database"></i>
+                <h3>MySQL</h3>
+                <p>Base de datos relacional.</p>
+            </div>
+            <div class="tarjeta">
+                <i class="fa-solid fa-microchip"></i>
+                <h3>Microcontroladores</h3>
+                <p>Comunicación con sensores y sistemas IoT.</p>
+            </div>
+            <div class="tarjeta">
+                <i class="fa-solid fa-microchip"></i>
+                <h3>Modelo MVC</h3>
+                <p>Estructura de programación del sitio web</p>
+            </div>
+            <div class="tarjeta">
+                <i class="fa-solid fa-microchip"></i>
+                <h3>Framework F3 (Fat Free Framework)</h3>
+                <p>Manejo de rutas, conexión con base de datos y control de vistas </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- seccion Proyecto -->
+    <section id="proyecto" class="seccion-proyecto">
+        <div class="contenido-proyecto">
+            <div class="texto-proyecto">
+                <h2>Arduchat: Juego de Damas con Comunicación IoT</h2>
+                <p>
+                    Nuestro proyecto consiste en un <strong>juego de damas programado en Arduino</strong> que permite la interacción entre dos jugadores de manera física y digital. 
+                    Cada movimiento realizado en alguno de los dos tableros se envía a través del protocolo <strong>MQTT</strong> utilizando el broker <strong>Mosquitto</strong>, lo que permite 
+                    transmitir y visualizar en tiempo real la partida en un <strong>sitio web</strong>.
+                </p>
+                <p>
+                    Además, los jugadores pueden <strong>enviarse mensajes</strong> durante la partida, los cuales también se publican en los tópicos de comunicación MQTT y se visualizan en el sitio web. 
+                    Tanto los <strong>movimientos</strong>, los <strong>mensajes</strong>, como el <strong>estado general de la partida</strong> se registran automáticamente 
+                    en una <strong>base de datos MySQL</strong>, permitiendo registrar y consultar el historial.
+                </p>
+                <p>
+                    Este proyecto integra el uso de <strong>hardware, software y protocolos de red</strong>, demostrando la conexión entre el mundo físico y el digital mediante 
+                    la <strong>Internet de las Cosas (IoT)</strong>.
+                </p>
+            </div>
+
+            <div class="imagen-proyecto">
+                <img src="/assets/arduchat.png" alt="Juego de damas IoT">
+            </div>
+        </div>
+    </section>
+    <section id="info" class="seccion-mqtt">
+    <h2>¿Qué es MQTT?</h2>
+    <div class="contenido-tec">
+      <i class="fa-solid fa-signal"></i>
+      <p>
+        <strong>MQTT (Message Queuing Telemetry Transport)</strong> es un protocolo de comunicación ligero 
+        basado en el modelo <strong>publicador/suscriptor</strong>. Se utiliza ampliamente en sistemas de 
+        <strong>Internet de las Cosas (IoT)</strong> porque permite enviar datos entre dispositivos con 
+        bajo consumo de ancho de banda y gran eficiencia.
+      </p>
+      <p>
+        En nuestro proyecto, cada tablero físico de damas publica los movimientos y mensajes en 
+        diferentes <strong>tópicos MQTT</strong>, y la aplicación web se suscribe a esos tópicos para 
+        recibir los datos en tiempo real.
+      </p>
+    </div>
+</section>
+
+<section class="seccion-mosquitto">
+  <h2>¿Para qué sirve el Broker Mosquitto?</h2>
+  <div class="contenido-tec">
+    <i class="fa-solid fa-network-wired"></i>
+    <p>
+      <strong>Mosquitto</strong> es un <strong>broker MQTT</strong>, es decir, el servidor encargado de 
+      recibir, distribuir y gestionar los mensajes que se envían entre los dispositivos conectados.
+    </p>
+    <p>
+      Actúa como intermediario: los tableros Arduino publican información (movimientos o mensajes), 
+      Mosquitto la recibe y la reenvía a todos los clientes suscritos, como el sitio web.  
+      Esto permite que la comunicación sea <strong>en tiempo real, bidireccional y confiable</strong>.
+    </p>
+  </div>
+</section>
+
+<section class="seccion-mvc">
+  <h2>¿Qué es el modelo MVC?</h2>
+  <div class="contenido-tec">
+    <i class="fa-solid fa-diagram-project"></i>
+    <p>
+      El <strong>Modelo-Vista-Controlador (MVC)</strong> es una arquitectura que separa la lógica del 
+      programa en tres partes: el <strong>Modelo</strong> (gestiona los datos y la base de datos), la 
+      <strong>Vista</strong> (interfaz que ve el usuario) y el <strong>Controlador</strong> 
+      (coordina la interacción entre ambos).
+    </p>
+    <p>
+      En nuestra aplicación web, este modelo se usa con <strong>PHP y MySQL</strong> para mantener un 
+      código ordenado y escalable. Así, cuando se reciben datos desde el broker MQTT, el controlador 
+      los procesa, el modelo los guarda y la vista los muestra actualizados.
+    </p>
+  </div>
+</section>
+<section class="seccion-f3">
+  <h2>Fat-Free Framework (F3)</h2>
+  <div class="contenido-f3">
+    <div class="texto-f3">
+      <p>
+        <strong>Fat-Free Framework (F3)</strong> es un microframework PHP liviano y eficiente utilizado para desarrollar aplicaciones web de forma rápida y estructurada. 
+        Permite organizar el código bajo el modelo <strong>MVC</strong> (Modelo, Vista, Controlador), facilitando la separación lógica de la aplicación.
+      </p>
+      <p>
+        En nuestro proyecto, F3 fue fundamental para manejar las <strong>rutas</strong>, la <strong>conexión con la base de datos</strong> y el <strong>control de vistas dinámicas</strong>. 
+        Gracias a su simplicidad, logramos una integración limpia entre el backend (PHP) y la interfaz web, manteniendo un código claro y modular.
+      </p>
+      <ul>
+        <li>✔ Gestión de rutas y controladores.</li>
+        <li>✔ Conexión con base de datos MySQL.</li>
+        <li>✔ Plantillas de vistas dinámicas.</li>
+        <li>✔ Código optimizado y fácil de mantener.</li>
+      </ul>
+    </div>
+    <div class="imagen-f3">
+      <img src="./assets/mvc.png" alt="Esquema MVC con F3">
+    </div>
+  </div>
+</section>
+
+    <section id="funcionamiento"class="seccion-funcionamiento">
+  <h2>¿Cómo es el funcionamiento nuestro proyecto?</h2>
+  <p>
+    El sistema conecta dos pantallas OLED donde se dibuja el tablero de damas programado en Arduino.  
+    Cada movimiento realizado por un jugador se envía mediante el protocolo MQTT al broker local (Mosquitto).  
+    Desde allí, la aplicación web recibe en el tópico para movimientos y refleja esos movimientos en tiempo real, permitiendo además el envío de mensajes entre ambos jugadores.
+  </p>
+  
+  <div class="contenedor-diagrama">
+    <img src="assets/diagramaFuncionamiento.png" alt="Diagrama del sistema Arduino + MQTT + Web">
+    <div class="etapas">
+      <div class="etapa">
+        <h3>1. Movimiento detectado</h3>
+        <p>El Arduino capta el movimiento de una ficha en el tablero físico.</p>
+      </div>
+      <div class="etapa">
+        <h3>2. Envío al broker MQTT</h3>
+        <p>El mensaje se publica en un tópico (por ejemplo, <code>arduino/movimientos</code>).</p>
+      </div>
+      <div class="etapa">
+        <h3>3. Recepción web</h3> <br>
+        <p>El listener suscripto al tópico de movimientos hace que el sitio web muestre el movimiento en el tablero virtual.</p>
+      </div>
+      <div class="etapa">
+        <h3>4. Visualización en tiempo real</h3>
+        <p>Quienes no esten jugando podrán seguir el proceso de la partida</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="componentes">
+  <h2>Componentes utilizados</h2>
+  <div class="timeline">
+    <div class="item">
+      <div class="linea"></div>
+      <div class="contenido">
+        <h3>Arduino Mega</h3>
+        <p>Microcontrolador principal que coordina las jugadas y envía datos al servidor MQTT.</p>
+      </div>
+    </div>
+    <div class="item">
+      <div class="linea"></div>
+      <div class="contenido">
+        <h3>Pantallas OLED</h3>
+        <p>Muestran los tableros de damas</p>
+      </div>
+    </div>
+    <div class="item">
+      <div class="linea"></div>
+      <div class="contenido">
+        <h3>Broker Mosquitto y MQTT</h3>
+        <p>Canal de comunicación que sincroniza los datos entre Arduino y el sitio web.</p>
+      </div>
+    </div>
+    <div class="item">
+      <div class="linea"></div>
+      <div class="contenido">
+        <h3>Sitio Web</h3>
+        <p>Visualiza la partida, los mensajes y el puntaje en tiempo real.</p>
+      </div>
+    </div>
+  </div>
+</section>
+  <h2 class="titulo">Proceso de armado</h2>
+    <div id="proceso"class="imagenesProceso">
+      <div class="imagenesProceso-grid">
+        <div class="img-box img1"></div>
+        <div class="img-box img2"></div>
+        <div class="img-box img3"></div>
+        <div class="img-box img4"></div>
+      </div>
+  </div>
+
+
+    <footer>
+        © 2025 - Escuela Técnica N° …  
+        <span>Laboratorio de Aplicaciones - 7º 1º TECPRO</span>
+        <span>Docente: Dardo Camaño</span>
+        <span>Desarrollado por los alumnos del Proyecto de Web Dinámica y Plataformas Móviles.</span>
+    </footer>
+    <script>
+        const btnTop = document.createElement('button');
+        btnTop.id = 'btn-top';
+        btnTop.innerHTML = '<i class="fa-solid fa-arrow-up"></i>';
+        document.body.appendChild(btnTop);
+
+        window.addEventListener('scroll', () => {
+        btnTop.style.display = window.scrollY > 300 ? 'block' : 'none';
+        });
+        btnTop.addEventListener('click', () => window.scrollTo({top: 0, behavior: 'smooth'}));
+
+        const toggle = document.querySelector('.menu-toggle');
+        const menu = document.querySelector('.menu');
+        toggle.addEventListener('click', () => {
+        menu.classList.toggle('active');
+        });
+    </script>
+
+</body>
+</html>

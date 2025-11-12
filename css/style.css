@@ -912,7 +912,10 @@
   .imagen-proyecto img {
     border-radius: 10px;
   }
-
+  .imagen-f3 img
+  {
+    height: 20vh;
+  }
   /* Sección funcionamiento */
   .seccion-funcionamiento h2 {
     font-size: 1.3rem;

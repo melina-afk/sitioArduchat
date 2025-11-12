@@ -22,6 +22,7 @@
         padding: 1.5rem 0;
         background: linear-gradient(180deg, #ffffff, #f5f7fa);
         box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+
     }
 
     .logo {
@@ -358,6 +359,7 @@
   border-radius: 12px;
   box-shadow: 0 5px 15px rgba(0,0,0,0.1);
   transition: transform 0.3s;
+  height: 30vh;
 }
 
 .imagen-f3 img:hover {
@@ -622,6 +624,21 @@
 }
 
     @media (max-width: 700px) {
+      /* Header se queda fijo */
+    header {
+        position: sticky;
+        top: 0;
+        z-index: 999;
+        transition: padding 0.3s ease;
+    }
+
+    /* Ocultar solo los títulos al scrollear */
+    header.header-scroll .titulos {
+        opacity: 0;
+        height: 0;
+        overflow: hidden;
+        transition: opacity 0.3s ease, height 0.3s ease;
+    }
     #componentes {
         padding: 3rem 1rem;
     }

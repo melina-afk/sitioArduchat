@@ -41,7 +41,7 @@
 
 /* Tamaño ideal para escritorio */
 .logo img {
-    width: 100px;
+    width: 180px;
     height: auto;
     filter: brightness(0) saturate(100%) invert(0%) sepia(6%) saturate(7475%) hue-rotate(277deg) brightness(94%) contrast(107%);
 }
@@ -869,7 +869,7 @@
     }
 
     .logo img {
-        width: 40px !important;  
+        width: 75px !important;  
         height: auto;
         margin-bottom: 38px;
     }

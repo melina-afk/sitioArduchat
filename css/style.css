@@ -4,12 +4,7 @@
         padding: 0;
         box-sizing: border-box;
     }
-/* Cuando el dispositivo esté en modo oscuro */
-@media (prefers-color-scheme: dark) {
-    .logo img {
-        filter: none; /* logo blanco original */
-    }
-}
+
 
     body {
         background: linear-gradient(120deg, #fdfbfb 0%, #f0f3f7 100%);
@@ -1009,4 +1004,10 @@
         font-size: 0.8rem;
         line-height: 1.3;
     }
+}
+/* FORZAR modo oscuro SOBRE cualquier media query posterior */
+@media (prefers-color-scheme: dark) {
+  header .logo img {
+    filter: none !important;
+  }
 }

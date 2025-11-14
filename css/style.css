@@ -4,12 +4,6 @@
         padding: 0;
         box-sizing: border-box;
     }
-
-    /* Modo claro (por defecto) */
-.logo img {
-    filter: brightness(0) saturate(100%) invert(0%) sepia(6%) saturate(7475%) hue-rotate(277deg) brightness(94%) contrast(107%);
-}
-
 /* Cuando el dispositivo esté en modo oscuro */
 @media (prefers-color-scheme: dark) {
     .logo img {
